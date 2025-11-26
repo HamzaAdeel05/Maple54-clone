@@ -8,6 +8,9 @@ import SuccessMission from './SuccessMission'
 import Unhappy from './Unhappy'
 import GoogleAds from './GoogleAds'
 import Design from './Design'
+import WebDesign from './WebDesign'
+import FutureSearch from './FutureSearch'
+import ElevateTeam from './ElevateTeam'
 
 const MainHomePage = () => {
   return (
@@ -21,6 +24,9 @@ const MainHomePage = () => {
         <Unhappy />
         <GoogleAds />
         <Design />
+        <WebDesign />
+        <FutureSearch />
+        <ElevateTeam />
     </div>
   )
 }
