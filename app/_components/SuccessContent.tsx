@@ -11,7 +11,7 @@ const SuccessContent = () => {
         { id: 6, category: 'Custom Software & App Dev', iconName: 'smartphone', description: 'Developing bespoke mobile and web applications.' },
         { id: 7, category: 'AI & Automation Solutions', iconName: 'bot', description: 'Implementing artificial intelligence and workflow automation.' },
         { id: 8, category: 'Team & Talent Outsourcing', iconName: 'users', description: 'Providing skilled professionals for your project needs.' },
-        { id: 8, category: 'Booking Calendar', iconName: 'users', description: 'Providing skilled professionals for your project needs.' },
+        { id: 9, category: 'Booking Calendar', iconName: 'users', description: 'Providing skilled professionals for your project needs.' },
     ];
     const managed_services_list = [
         "Google Ads",
@@ -33,7 +33,7 @@ const SuccessContent = () => {
             <div className="grid grid-cols-4 gap-4">
                 <div className="">
                     {serviceItems.map((item) => (
-                        <div className="px-6 border-b border-dotted py-4 ">
+                        <div key={item.id} className="px-6 border-b border-dotted py-4 ">
                             <h2 className='font-medium text-lg text-gray-700'>{item.category}</h2>
                         </div>
                     ))}
@@ -65,7 +65,7 @@ const SuccessContent = () => {
                 <div className="">
                     <h1  className='text-[#FA5131] font-bold text-2xl '>We Manage</h1>
                     {managed_services_list.map((item) => (
-                        <div className="px-6 border-b-2 border-dotted py-4">
+                        <div key={item} className="px-6 border-b-2 border-dotted py-4">
                             <h2 className='font-medium text-lg text-gray-700'>{item}</h2>
                         </div>
                     ))}
