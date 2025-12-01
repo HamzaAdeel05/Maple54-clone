@@ -25,7 +25,7 @@ const Unlocking = () => {
                         <div className="space-y-3 pt-5">
                             <h2 className='font-bold text-[43px]'>Are you struggling to increase your online visibility?</h2>
                             {text.map((t) => (
-                                <p className='underline decoration-dotted font-medium text-xl text-gray-700 '>{t}</p>
+                                <p key={t} className='underline decoration-dotted font-medium text-xl text-gray-700 '>{t}</p>
                             ))}
                         </div>
                     </div>

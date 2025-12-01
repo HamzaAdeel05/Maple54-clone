@@ -11,6 +11,11 @@ import Design from './Design'
 import WebDesign from './WebDesign'
 import FutureSearch from './FutureSearch'
 import ElevateTeam from './ElevateTeam'
+import FlutterLogo from './FlutterLogo'
+import AiAdoption from './AiAdoption'
+import AiDrivenDesign from './AiDrivenDesign'
+import GrowBuisness from './GrowBuisness'
+import Help from './Help'
 
 const MainHomePage = () => {
   return (
@@ -27,6 +32,11 @@ const MainHomePage = () => {
         <WebDesign />
         <FutureSearch />
         <ElevateTeam />
+        <FlutterLogo />
+        <AiAdoption />
+        <AiDrivenDesign />
+        <GrowBuisness />
+        <Help />
     </div>
   )
 }

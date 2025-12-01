@@ -31,7 +31,7 @@ const Design = () => {
         <div className="py-15 ">
             <div className="flex  justify-around items-center gap-4 px-20 mb-20 ">
                 {Logos.map((logo) => (
-                    <div className="w-25 h-25   shadow-xl flex justify-center items-center">
+                    <div key={logo.id} className="w-25 h-25   shadow-xl flex justify-center items-center">
 
                         <Image
                             key={logo.id}
