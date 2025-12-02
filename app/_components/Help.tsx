@@ -19,8 +19,8 @@ const Help = () => {
                         Maple 54 is here to help you grow!
                     </h3>
                     <div className="flex gap-4">
-                        <Button className='bg-white px-6 text-[#FA5131] border border-[#FA5131]'>Let's discuss your goals!</Button>
-                        <Button className='bg-[#FA5131] px-10'>Book A Demo</Button>
+                        <Button className='bg-white px-6 hover:bg-[#FA5131] hover:text-white text-[#FA5131] border border-[#FA5131]'>Let's discuss your goals!</Button>
+                        <Button className='bg-[#FA5131] border border-[#FA5131] hover:bg-white hover:text-[#FA5131] px-10'>Book A Demo</Button>
                     </div>
                     </div>
                 </div>

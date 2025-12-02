@@ -4,7 +4,6 @@ import { cn } from '@/lib/utils';
 import React, { useState } from 'react'
 
 const FutureSearch = () => {
-    const [selected, setSelected] = useState<any>()
     const seoServices = [
         {
             key: "semantic_seo",
@@ -191,6 +190,7 @@ const FutureSearch = () => {
             ]
         }
     ];
+    const [selected, setSelected] = useState<any>(seoServices[0])
 
     const managed_services_list = [
         "Topic Cluster Strategy",
@@ -264,7 +264,7 @@ const FutureSearch = () => {
                         <div className="">
                             <h1 className='text-[#FA5131] font-bold text-2xl '>How We handle it?</h1>
                             {managed_services_list.map((item) => (
-                                <div className="px-6 border-b-2 border-dotted py-4">
+                                <div key={item} className="px-6 border-b-2 border-dotted py-4">
                                     <h2 className='font-medium text-lg text-gray-700 hover:text-[#FA5131] cursor-pointer'>{item}</h2>
                                 </div>
                             ))}
