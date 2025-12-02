@@ -5,7 +5,6 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 
 const GrowBuisness = () => {
-    const [selected, setSelected] = useState<any>(null)
     const Array = [
         {
             "category": "Real Estate",
@@ -44,6 +43,8 @@ const GrowBuisness = () => {
             ]
         }
     ]
+    const [selected, setSelected] = useState<any>(Array[0])
+
     return (
         <div className='px-10 py-15 bg-gray-100'>
             <div className="space-y-6 mt-10">

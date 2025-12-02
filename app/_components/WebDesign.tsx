@@ -21,7 +21,6 @@ import { cn } from "@/lib/utils";
 
 
 export default function ServicesGrid() {
-    const [selected, setSelected] = useState<any>(null)
 
     const services = [
         {
@@ -197,6 +196,7 @@ export default function ServicesGrid() {
             ],
         },
     ];
+    const [selected, setSelected] = useState<any>(services[0])
 
     return (
         <div className="max-w-360 mx-auto py-20">
@@ -231,14 +231,14 @@ export default function ServicesGrid() {
                             )}
                             >
                                 <div className="flex items-center gap-3">
-                                    <div className={cn("h-10 w-10 bg-[#3F5C7C] text-white flex justify-center items-center rounded-full" , selected === card ? "bg-white text-[#3F5C7C]" : "" )}>
+                                    <div className={cn("h-10 w-10 bg-[#3F5C7C] text-white flex justify-center items-center rounded-full", selected === card ? "bg-white text-[#3F5C7C]" : "")}>
                                         {card.icon}
                                     </div>
-                                    <h2 className={cn("font-bold text-2xl text-[#431616]",selected===card ? "text-white" : "")}>{card.title}</h2>
+                                    <h2 className={cn("font-bold text-2xl text-[#431616]", selected === card ? "text-white" : "")}>{card.title}</h2>
                                 </div>
-                                <p className={cn("font-semibold text-gray-800",selected===card ? "text-white" : "")}>{card.desc}</p>
+                                <p className={cn("font-semibold text-gray-800", selected === card ? "text-white" : "")}>{card.desc}</p>
                                 <div className="flex justify-end  ">
-                                    <div className={cn("border-2 border-[#3F5C7C] rounded-full h-8 w-8 flex justify-center items-center",selected===card ? "bg-gray-200" : "")}>
+                                    <div className={cn("border-2 border-[#3F5C7C] rounded-full h-8 w-8 flex justify-center items-center", selected === card ? "bg-gray-200" : "")}>
 
                                         <MoveRight className="text-[#3F5C7C]" size={20} />
                                     </div>

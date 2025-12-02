@@ -16,6 +16,10 @@ import AiAdoption from './AiAdoption'
 import AiDrivenDesign from './AiDrivenDesign'
 import GrowBuisness from './GrowBuisness'
 import Help from './Help'
+import Listening from './Listening'
+import FAQs from './FAQs'
+import GithubLogo from './GithubLogo'
+import Footer from './Footer'
 
 const MainHomePage = () => {
   return (
@@ -37,6 +41,10 @@ const MainHomePage = () => {
         <AiDrivenDesign />
         <GrowBuisness />
         <Help />
+        <Listening />
+        <FAQs />
+        <GithubLogo />
+        <Footer />
     </div>
   )
 }

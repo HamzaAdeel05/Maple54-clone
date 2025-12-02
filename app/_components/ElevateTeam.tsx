@@ -19,8 +19,6 @@ import { useState } from 'react';
 import { CloudUpload, Flame, Globe, MessageSquare, Sparkles } from 'lucide-react';
 
 const ElevateTeam = () => {
-    const [selected, setSelected] = useState<any>(null)
-    console.log('selected', selected);
 
     const links = [
         {
@@ -281,7 +279,10 @@ const ElevateTeam = () => {
             cta_text: 'Looking for a comprehensive full-stack solution built on modern, JavaScript-based technologies?',
             description: 'Our MERN Stack Developers are experts in building robust, high-performance, and scalable full-stack applications from database to user interface.',
         },
+
     ];
+    const [selected, setSelected] = useState<any>(links[0])
+
     return (
         <div>
             <div className="bg-[#F3F3F3]">
