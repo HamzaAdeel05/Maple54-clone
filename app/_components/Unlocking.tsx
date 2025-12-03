@@ -13,36 +13,36 @@ const Unlocking = () => {
         "I need a full-service solution for online success."
     ]
     return (
-        <div className='grid grid-cols-4 py-15 gap-3'>
+        <div className='lg:grid grid-cols-4 py-15  gap-3 '>
             <div className="col-span-3 relative">
                 <Image
-                    className='w-7xl'
+                    className='lg:w-7xl'
                     src={BannerImage}
                     alt='hello'
                 />
-                <div className="absolute top-10 left-10 space-y-12">
+                <div className="absolute top-2 lg:top-10 ml-5 lg:left-10 lg:space-y-12">
                     <div className="grid grid-cols-2 ">
                         <div className="space-y-3 pt-5">
-                            <h2 className='font-bold text-[43px]'>Are you struggling to increase your online visibility?</h2>
+                            <h2 className='font-bold text-[18px]  lg:text-[43px]'>Are you struggling to increase your online visibility?</h2>
                             {text.map((t) => (
-                                <p key={t} className='underline decoration-dotted font-medium text-xl text-gray-700 '>{t}</p>
+                                <p key={t} className='lg:flex hidden  underline decoration-dotted font-medium text-xl text-gray-700 '>{t}</p>
                             ))}
                         </div>
                     </div>
-                    <Button className='text-[16px] hover:bg-[#FA513E] hover:text-white px-8 font-semibold bg-white text-[#FA513E] border border-[#FA513E] py-5'>Free Marketing Plan</Button>
+                    <Button className='lg:text-[16px] hover:bg-[#FA513E] hover:text-white lg:px-8 font-semibold bg-white text-[#FA513E] border border-[#FA513E] lg:py-5 px-2 py-1 text-sm'>Free Marketing Plan</Button>
                 </div>
             </div>
-            <div className="bg-[#431616] p-4">
-                <div className=" text-center px-10 py-5 space-y-6">
-                    <h2 className='text-white font-bold text-4xl'>Everything Your Business Needs to Dominate Online</h2>
-                    <p className='text-white font-semibold text-lg'>Transform your business with our comprehensive digital solutions</p>
+            <div className="bg-[#431616] p-4 lg:mt-0 mt-5">
+                <div className=" lg:text-center px-5 lg:px-10 py-5 space-y-4 lg:space-y-6">
+                    <h2 className='text-white font-bold text-2xl lg:text-4xl'>Everything Your Business Needs to Dominate Online</h2>
+                    <p className='text-white font-semibold lg:text-lg'>Transform your business with our comprehensive digital solutions</p>
                 </div>
-                <div className="text-white  mx-6 mt-10 text-xl space-y-5">
+                <div className="text-white font-medium text-sm  mx-6 mt-5 lg:mt-10 lg:text-xl space-y-5">
                     <p>I need a graphic designer.</p>
                      <p>   I need a brand designer.</p>
                      <p>   I need a UX|UI designer.</p>
                 </div>
-                <div className="flex justify-center items-center py-10">
+                <div className="flex lg:justify-center items-center py-10">
                 <Button variant={'outline'} className='bg-transparent text-white px-10 text-[16px]'>Start Your Ad Campaing</Button>
                 </div>
             </div>

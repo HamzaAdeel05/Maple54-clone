@@ -187,11 +187,11 @@ const serviceItems = [
 
             <div className="">
                 <div>
-                    <div className="grid grid-cols-4 gap-10">
+                    <div className="lg:grid grid-cols-4 gap-10 px-5">
                         <div className="">
                             {serviceItems.map((item: any) => (
-                                <div  onClick={() => setSelected(item)} key={item.category} className={cn("px-6 hover:cursor-pointer border-b border-dotted py-4 ", selected === item ? "bg-[#431616] " : "")}>
-                                    <h2 className={cn('font-medium text-lg hover:text-[#FA5131] text-gray-700', selected === item ? "text-[#F6F0E6]" : "")}>{item.category}</h2>
+                                <div  onClick={() => setSelected(item)} key={item.id} className={cn("px-6 hover:cursor-pointer border-b border-dotted py-4 ", selected.id === item.id ? "bg-[#431616] " : "")}>
+                                    <h2 className={cn('font-medium text-lg hover:text-[#FA5131] text-gray-700', selected.id === item.id ? "text-[#F6F0E6]" : "")}>{item.category}</h2>
                                 </div>
                             ))}
                         </div>

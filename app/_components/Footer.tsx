@@ -55,11 +55,11 @@ const Footer = () => {
     return (
         <div>
             <div className=" bg-[#431616] text-white">
-                <div className=" flex py-20 justify-evenly">
-                    <div className="max-w-75 space-y-10">
+                <div className="grid grid-cols-2 px-5  lg:flex py-20 justify-evenly">
+                    <div className="lg:max-w-75 space-y-10">
                         <div className="space-y-4">
                             <img src="https://www.maple54.com/_next/static/media/MapleSmallLogo.45f8fb3a.svg" alt="" />
-                            <p className='font-medium text-xl'>Know about Digital Marketing Trends
+                            <p className='font-medium lg:text-xl'>Know about Digital Marketing Trends
                                 Sign up for our newsletter:</p>
                             <Input className='placeholder:text-white placeholder:font-medium placeholder:text-lg px-6 py-5' placeholder='Email Address' />
                         </div>
@@ -101,7 +101,7 @@ const Footer = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="w-200  ">
+                    <div className="lg:grid hidden lg:w-200  ">
                         <div className="grid grid-cols-2 rounded-2xl ">
                             <div className="">
                                 {CategoriesArray.map((c) => (
@@ -134,7 +134,7 @@ const Footer = () => {
                         ))}
                     </div>
                     <h2 className='font-medium text-lg my-5'>Copyright © 2025 Maple 54, LLC. All rights reserved.</h2>
-                    <img className='w-200' src="https://www.maple54.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FvenorsImg.68515df8.jpg&w=1920&q=75" />
+                    <img className='lg:w-200' src="https://www.maple54.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FvenorsImg.68515df8.jpg&w=1920&q=75" />
                 </div>
             </div>
         </div>

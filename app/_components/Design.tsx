@@ -28,10 +28,10 @@ const Design = () => {
     ];
 
     return (
-        <div className="py-15 ">
-            <div className="flex  justify-around items-center gap-4 px-20 mb-20 ">
+        <div className="py-15 lg:flex hidden ">
+            <div className="lg:flex  justify-around items-center gap-4 hidden px-20 mb-20 ">
                 {Logos.map((logo) => (
-                    <div key={logo.id} className="w-25 h-25   shadow-xl flex justify-center items-center">
+                    <div key={logo.id} className="lg:w-25 lg:h-25   shadow-xl flex justify-center items-center">
 
                         <Image
                             key={logo.id}

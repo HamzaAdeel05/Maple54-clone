@@ -46,10 +46,10 @@ const GrowBuisness = () => {
     const [selected, setSelected] = useState<any>(Array[0])
 
     return (
-        <div className='px-10 py-15 bg-gray-100'>
+        <div className='lg:px-10 px-5 py-10 lg:py-15 bg-gray-100'>
             <div className="space-y-6 mt-10">
-                <h1 className='text-4xl font-bold'>Grow Your Business with <span className='text-[#FA5131]'> AI-Powered Voice Calling </span></h1>
-                <h2 className='text-2xl '>Maple Voice answers calls, takes orders, books appointments,
+                <h1 className='text-xl lg:text-4xl font-bold'>Grow Your Business with <span className='text-[#FA5131]'> AI-Powered Voice Calling </span></h1>
+                <h2 className='lg:text-2xl '>Maple Voice answers calls, takes orders, books appointments,
                     upsells,
                     and handles high-ticket
                     deals—so you
@@ -57,22 +57,22 @@ const GrowBuisness = () => {
                     it yourself. Streamline your business with AI.</h2>
             </div>
             <div className="max-w-6xl mx-auto py-10">
-                <div className="flex justify-between">
+                <div className="lg:flex grid grid-cols-2 space-y-4 justify-between">
                     {Array.map((item) => (
-                        <div onClick={() => setSelected(item)} key={item.description} className="cursor-pointer">
-                            <h2 className='text-gray-500 text-2xl'>{item.category}</h2>
+                        <div onClick={() => setSelected(item)} key={item.category} className="cursor-pointer">
+                            <h2 className='text-gray-500 lg:text-2xl'>{item.category}</h2>
                         </div>
                     ))}
                 </div>
                 <Separator className='my-5' />
                 {selected && (
-                    <div className="grid grid-cols-3 ">
+                    <div className="lg:grid grid-cols-3 ">
 
                         <div className="space-y-4 col-span-2 gap-4 max-w-lg">
-                            <h2 className='font-medium text-[18px] text-[#3F5C7C]'>{selected.description}</h2>
+                            <h2 className='font-medium text-sm lg:text-[18px] text-[#3F5C7C]'>{selected.description}</h2>
                             <div className="space-y-4">
-                                {selected?.points?.map((p: string) => (
-                                    <div className="flex gap-3 items-center ">
+                                {selected?.points?.map((p: string,index:number) => (
+                                    <div key={index} className="flex gap-3 items-center ">
                                         <div className="rounded-full  bg-[#3F5C7C] p-1">
                                             <Check size={10} className='text-gray-100 ' />
                                         </div>
