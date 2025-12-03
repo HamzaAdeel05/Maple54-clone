@@ -17,16 +17,16 @@ const MapleLogo = () => {
             <div className=" flex gap-2">
 
                 {socialIcons.map((logos) => (
-                    <div key={logos.name} className="w-8  rounded-full">
+                    <div key={logos.name} className="lg:w-8 w-5 rounded-full">
                         <img className='w-full h-full rounded-full border'  src={logos.url} />
                     </div>
                 ))}
             </div>
-            <div className="w-50">
+            <div className="lg:w-50 lg:grid hidden">
 
             <img src='https://www.maple54.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBlackLogo.b108b29a.jpg&w=384&q=75' />
             </div>
-            <Button className='bg-[#FA513E] px-10 font-bold text-lg py-5 ' >
+            <Button className='bg-[#FA513E] lg:px-10 font-bold px-3 text-[12px] lg:text-lg lg:py-5 ' >
                 Get Started
             </Button>
         </div>

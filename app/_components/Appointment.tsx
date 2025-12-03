@@ -8,13 +8,13 @@ const Appointment = () => {
             <div className="flex justify-between w-full py-3 px-2 border-b text-[#431616]   ">
                 <div className="flex gap-1 justify-center items-center">
                     <Sparkle size={14} className='font-medium text-red-800' />
-                    <h2 className='text-[14px] underline font-semibold'>
+                    <h2 className='text-[14px] underline font-semibold hover:text-[#FA5131] cursor-pointer'>
                         Book an Appointment
                     </h2>
                 </div>
                 <div className="flex gap-3">
                     <Separator orientation='vertical' className=' bg-neutral-600 '/>
-                    <p className='text-[14px] font-semibold'>Contact us</p>
+                    <p className='text-[14px] font-semibold hover:text-[#FA5131] cursor-pointer'>Contact us</p>
                 </div>
 
             </div>

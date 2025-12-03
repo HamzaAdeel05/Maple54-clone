@@ -28,7 +28,7 @@ const FlutterLogo = () => {
     ]
 
     return (
-        <div className=" px-40 py-30">
+        <div className=" px-40 py-30 lg:grid hidden">
             <div className="flex justify-around">
                 {logos.map((logo:any,index:number) => (
                     <Card key={index} className="px-4 py-3 shadow-lg  border-none">

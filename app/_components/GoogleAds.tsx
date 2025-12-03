@@ -130,7 +130,7 @@ const GoogleAds = () => {
         },
 
         {
-            name: "Local Digital Ads",
+            name: "Local Dig Ads",
             image_link: "https://www.maple54.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FGoogle_Color.bd6e2f0f.webp&w=32&q=75",
             question: "Are local customers finding your business when they need you?",
             answer: "Local ads help you capture nearby customers with high intent.",
@@ -142,7 +142,7 @@ const GoogleAds = () => {
         },
 
         {
-            name: "WhatsApp Campaigns",
+            name: "WhatsApp ",
             image_link: "https://www.maple54.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FWhatsapp_Color.b5ba1581.webp&w=32&q=75",
             question: "Are you directly messaging customers where they respond fastest?",
             answer: "WhatsApp campaigns deliver unmatched open rates and instant engagement.",
@@ -157,37 +157,37 @@ const GoogleAds = () => {
 
     return (
         <div className='bg-[#C2D3E6] '>
-            <div className="flex justify-end">
+            <div className="lg:flex hidden justify-end">
                 <Button variant={'ghost'} className='bg-[#3F5C7C] hover:text-[#3F5C7C] text-white px-6 rounded-b-sm text-[16px]'>Google Ads starting from $750</Button>
             </div>
-            <div className="py-20  flex gap-10 px-10 justify-center items-center">
+            <div className="lg:py-20 py-10  lg:flex gap-10 px-3 lg:px-10 justify-center items-center">
                 <div className="grid grid-cols-2 gap-4">
                     {Links.map((link: any) => (
 
-                        <Card key={link.name} onClick={() => setSelected(link)} className={cn(selected === link ? "bg-[#3F5C7C] text-white" : "")}>
+                        <Card key={link.name} onClick={() => setSelected(link)} className={cn("py-2 ", selected.name === link.name ? "bg-[#3F5C7C] text-white" : "")}>
                             <div className="flex gap-4 items-center px-4">
                                 <div className="w-5 h-5">
                                     <img src={link.image_link} />
                                 </div>
-                                <h2 className={cn('font-semibold text-xl text-[#3F5C7C]', selected === link ? "text-white" : "")}>{link.name}</h2>
+                                <h2 className={cn('font-semibold  lg:text-xl text-[#3F5C7C]', selected.name === link.name ? "text-white" : "")}>{link.name}</h2>
                             </div>
                         </Card>
 
                     ))}
                 </div>
                 {selected && (
-                    <div className="min-w-4xl">
+                    <div className="lg:min-w-4xl lg:mt-0 mt-8">
                         <div className="space-y-7 ">
                             <div className="flex items-center gap-4">
                                 <div className="w-6 h-6">
                                     <img src={selected.image_link} />
                                 </div>
-                                <h2 className='text-[#264464] text-4xl font-bold'>{selected.name}</h2>
+                                <h2 className='text-[#264464] text-xl lg:text-4xl font-extrabold'>{selected.name}</h2>
                             </div>
-                            <h2 className='text-[#264464] text-2xl font-bold'>{selected.question}</h2>
-                            <h3 className='font-semibold text-2xl'>{selected.answer}</h3>
-                            <div className="flex justify-between items-center">
-                                <div className="space-y-6 py-8 ">
+                            <h2 className='text-[#264464] lg:text-2xl font-bold'>{selected.question}</h2>
+                            <h3 className='font-semibold lg:text-2xl'>{selected.answer}</h3>
+                            <div className="lg:flex hidden justify-between items-center">
+                                <div className=" space-y-6 py-8 ">
                                     <div className="flex gap-3 items-center">
                                         <div className="bg-[#DEE7F1] rounded-full p-4 ">
                                             <SquareArrowOutUpRight className='text-[#264464]' />
@@ -208,7 +208,7 @@ const GoogleAds = () => {
                                     </div>
                                 </div>
                                 <div className="">
-                                    <Button className='bg-[#FA5131]'>Get started</Button>
+                                    <Button className='bg-[#FA5131] lg:flex hidden'>Get started</Button>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +217,7 @@ const GoogleAds = () => {
             </div>
             {selected && (
 
-                <div className="grid grid-cols-2 px-10 gap-10 pb-10 ">
+                <div className="hidden lg:grid grid-cols-2 px-10 gap-10 pb-10 ">
                     <div className="bg-[#3F5C7C] text-white px-4 py-6 rounded-2xl ">
                         <h2 className='text-xl font-bold mb-3'>The Truth:</h2>
                         <p className='text-lg font-medium'>{selected.truth}</p>

@@ -28,10 +28,9 @@ const Ineed = () => {
 
     return (
         <div>
-            <div className="flex text-center pb-10 gap-4 justify-center items-center px-5 my-15">
+            <div className="lg:flex grid grid-cols-2 text-center pb-10 gap-4 justify-center items-center px-5 my-15">
                 {serviceItems.map((item) => {
                     const IconComponent = iconMap[item.iconName];
-
                     return (
                         <Card key={item.id} className='h-full w-full px-4 items-center shadow-xl hover:cursor-pointer'>
                             <div className="bg-gray-200 rounded-full p-2">

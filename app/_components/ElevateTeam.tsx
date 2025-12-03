@@ -286,24 +286,24 @@ const ElevateTeam = () => {
     return (
         <div>
             <div className="bg-[#F3F3F3]">
-                <div className="flex flex-col px-60 gap-5 justify-center items-center py-10">
-                    <h2 className='font-bold text-4xl'>Elevate Your Team with <span className='text-[#FA5131]'> Top-Tier Talent</span></h2>
-                    <p className='font-bold text-2xl text-[#431616]'>Hire Skilled Developers and Designers On-Demand</p>
-                    <p className='text-2xl font-medium'>At Maple54, we offer flexible outsourcing solutions to integrate skilled developers and specialists into
+                <div className="flex flex-col px-5 lg:px-60 gap-5 justify-center lg:items-center py-10">
+                    <h2 className='font-bold text-xl lg:text-4xl'>Elevate Your Team with <span className='text-[#FA5131]'> Top-Tier Talent</span></h2>
+                    <p className='font-bold text-xl lg:text-2xl text-[#431616]'>Hire Skilled Developers and Designers On-Demand</p>
+                    <p className='lg:text-2xl font-medium'>At Maple54, we offer flexible outsourcing solutions to integrate skilled developers and specialists into
                         your workflow, covering everything from Java development to UI/UX design.</p>
                 </div>
-                <div className="py-20 px-30 gap-6 grid grid-cols-4">
+                <div className="py-20 px-5 lg:px-30 gap-6 space-y-4 lg:grid grid-cols-4">
                     {links.map((link: any) => (
                         <div key={link.id} className={link.merged ? "row-span-7 col-span-2" : " "}>
                             {link.merged ? (
                                 <div className="h-full">
 
                                     {selected && (
-                                        <Card className='h-full p-6'>
+                                        <Card className='lg:grid hidden h-full p-6'>
 
                                             <div className="flex gap-4 items-center">
                                                 {selected?.icon && (
-                                                    <Image alt="" src={selected.icon} className='w-10 h-10' />
+                                                    <Image alt="ndf" src={selected.icon} className='w-10 h-10' />
                                                 )}
                                                 <h2 className='text-[#3F5C7C] text-2xl font-bold'>{selected?.heading}</h2>
                                             </div>
@@ -315,7 +315,7 @@ const ElevateTeam = () => {
                                                     <div key={index} className="flex gap-3 ">
                                                         <item.icon className="text-[#3F5C7C]" />
                                                         <p className='text-[#3F5C7C] font-semibold text-lg'>{item.label}</p>
-                                                        <Image alt='' src={item.icon} />
+                                                        {/* <Image alt='dsa' src={item.icon} /> */}
                                                     </div>
                                                 ))}
                                             </div>
@@ -330,9 +330,9 @@ const ElevateTeam = () => {
                             ) : (
 
                                 <Card onClick={() => setSelected(link)} className='py-3'>
-                                    <div className="flex gap-3 px-3 ">
+                                    <div className="flex gap-3 text-center px-3 ">
                                         <Image src={link.icon} alt="sjd" className='w-7 ' />
-                                        <p className='font-medium text-lg'>{link.label}</p>
+                                        <p className='font-medium  text-[12px] lg:text-lg'>{link.label}</p>
                                     </div>
                                 </Card>
                             )}

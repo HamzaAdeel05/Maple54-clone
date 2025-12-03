@@ -10,9 +10,10 @@ const Help = () => {
             >
 
                 {/* Text on top */}
-                <div className="absolute grid grid-cols-2 w-full">
+                <div className="absolute lg:grid grid-cols-2 w-full">
                     <div className=""></div>
-                    <div className="max-w-md mt-30  space-y-10 ">
+                    
+                    <div className="lg:max-w-md mt-30  space-y-10 ">
                     <h1 className="text-4xl font-bold">How can we <span className='text-[#FA5131]'>help? </span></h1>
                     <h3 className="text-2xl font-medium ">
                         With expert advice and award-winning support,
