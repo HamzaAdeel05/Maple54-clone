@@ -28,10 +28,10 @@ const Design = () => {
     ];
 
     return (
-        <div className="py-15 lg:flex hidden ">
-            <div className="lg:flex  justify-around items-center gap-4 hidden px-20 mb-20 ">
+        <div className="py-15 md:grid  hidden  ">
+            <div className="md:grid md:grid-cols-7  lg:flex flex-wrap justify-center items-center gap-4 hidden px-20 mb-20 ">
                 {Logos.map((logo) => (
-                    <div key={logo.id} className="lg:w-25 lg:h-25   shadow-xl flex justify-center items-center">
+                    <div key={logo.id} className="md:w-25 md:h-25   shadow-xl flex justify-center items-center">
 
                         <Image
                             key={logo.id}
@@ -43,7 +43,7 @@ const Design = () => {
                     </div>
                 ))}
             </div>
-                <div className="flex justify-center text-center flex-col space-y-4">
+                <div className="xl:flex hidden justify-center text-center flex-col space-y-4">
                     <h2 className="text-4xl font-bold"><span className="text-[#FA5131]">Design & Website</span> Development</h2>
                     <p className="text-2xl font-medium text-[#3F5F84]">Crafting tailored websites and designs to elevate your brand presence.</p>
                 </div>

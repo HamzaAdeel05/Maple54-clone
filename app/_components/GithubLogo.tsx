@@ -51,7 +51,7 @@ const GithubLogo = () => {
     }
 ]
     return (
-        <div className='lg:flex hidden justify-center items-center my-20'>
+        <div className='md:flex hidden justify-center items-center my-20'>
             <div className="grid grid-cols-9 gap-6">
                 {Logos.map((logo)=>(
                     <Card key={logo.id} className='p-2 border-none shadow-lg'>

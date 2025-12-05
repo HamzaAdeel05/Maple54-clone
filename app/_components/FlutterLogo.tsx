@@ -8,14 +8,14 @@ import Ai from "./../../public/Images/Dev/Ai.svg"
 import Figma from "./../../public/Images/Dev/Figma.svg"
 import Flutter from "./../../public/Images/Dev/Flutter.svg"
 import Python from "./../../public/Images/Dev/Python.svg"
-import React from "./../../public/Images/Dev/React.svg"
+import ReactLogo from "./../../public/Images/Dev/ReactLogo.svg"
 import { Card } from "@/components/ui/card"
 import Image from "next/image"
 
 const FlutterLogo = () => {
     const logos = [
         Flutter,
-        React,
+        ReactLogo,
         JavaScript,
         Java,
         Next,
@@ -28,11 +28,11 @@ const FlutterLogo = () => {
     ]
 
     return (
-        <div className=" px-40 py-30 lg:grid hidden">
-            <div className="flex justify-around">
+        <div className=" xl:px-40 py-30 md:block hidden">
+            <div className="xl:flex md:flex-wrap  justify-center gap-4 px-5">
                 {logos.map((logo:any,index:number) => (
-                    <Card key={index} className="px-4 py-3 shadow-lg  border-none">
-                        <div className="w-15 ">
+                    <Card key={index} className="flex justify-center items-center  xl:px-4 xl:py-3 shadow-lg  border-none">
+                        <div className="xl:w-15 md:w-12 ">
                         <Image src={logo} alt="" className="w-full h-full " />
                         </div>
                     </Card >

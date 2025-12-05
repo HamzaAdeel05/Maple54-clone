@@ -13,7 +13,7 @@ import Python from "./../../public/Images/Dev/Python.svg"
 import Qa from "./../../public/Images/Dev/Qa.svg"
 import Word from "./../../public/Images/Dev/Word.svg"
 import Stack from "./../../public/Images/Dev/Stack.svg"
-import React from "./../../public/Images/Dev/React.svg"
+import ReactLogo from "./../../public/Images/Dev/ReactLogo.svg"
 import Image from 'next/image';
 import { useState } from 'react';
 import { CloudUpload, Flame, Globe, MessageSquare, Sparkles } from 'lucide-react';
@@ -71,7 +71,7 @@ const ElevateTeam = () => {
             question: 'Why Choose Maple54 for JavaScript Developers?',
             points: [
                 { label: 'Frontend & Backend Mastery', icon: Sparkles },
-                { label: 'Expertise in Modern Frameworks (e.g., React, Vue, Angular)', icon: CloudUpload },
+                { label: 'Expertise in Modern Frameworks (e.g., ReactLogo, Vue, Angular)', icon: CloudUpload },
                 { label: 'Full-Stack Development Capability', icon: Globe },
                 { label: 'Performance Optimization Focus', icon: Flame },
                 { label: 'Dedicated Team Integration', icon: MessageSquare },
@@ -118,7 +118,7 @@ const ElevateTeam = () => {
         {
             id: 'reactjs-dev',
             label: 'Hire a React.js Developer',
-            icon: React,
+            icon: ReactLogo,
             path: '/hire/reactjs-developer',
             group: 'main',
             heading: 'HIRE A REACT.JS DEVELOPER',
@@ -286,20 +286,20 @@ const ElevateTeam = () => {
     return (
         <div>
             <div className="bg-[#F3F3F3]">
-                <div className="flex flex-col px-5 lg:px-60 gap-5 justify-center lg:items-center py-10">
-                    <h2 className='font-bold text-xl lg:text-4xl'>Elevate Your Team with <span className='text-[#FA5131]'> Top-Tier Talent</span></h2>
-                    <p className='font-bold text-xl lg:text-2xl text-[#431616]'>Hire Skilled Developers and Designers On-Demand</p>
-                    <p className='lg:text-2xl font-medium'>At Maple54, we offer flexible outsourcing solutions to integrate skilled developers and specialists into
+                <div className="flex flex-col px-5 xl:px-60 gap-5 justify-center md:items-center py-10">
+                    <h2 className='font-bold text-xl xl:text-4xl'>Elevate Your Team with <span className='text-[#FA5131]'> Top-Tier Talent</span></h2>
+                    <p className='font-bold text-xl xl:text-2xl text-[#431616]'>Hire Skilled Developers and Designers On-Demand</p>
+                    <p className='xl:text-2xl font-medium'>At Maple54, we offer flexible outsourcing solutions to integrate skilled developers and specialists into
                         your workflow, covering everything from Java development to UI/UX design.</p>
                 </div>
-                <div className="py-20 px-5 lg:px-30 gap-6 space-y-4 lg:grid grid-cols-4">
+                <div className="py-20 px-5 md:px-10 xl:px-30 gap-6 space-y-4 md:grid grid-cols-4">
                     {links.map((link: any) => (
                         <div key={link.id} className={link.merged ? "row-span-7 col-span-2" : " "}>
                             {link.merged ? (
                                 <div className="h-full">
 
                                     {selected && (
-                                        <Card className='lg:grid hidden h-full p-6'>
+                                        <Card className='md:grid hidden h-full p-6'>
 
                                             <div className="flex gap-4 items-center">
                                                 {selected?.icon && (
@@ -330,9 +330,9 @@ const ElevateTeam = () => {
                             ) : (
 
                                 <Card onClick={() => setSelected(link)} className='py-3'>
-                                    <div className="flex gap-3 text-center px-3 ">
-                                        <Image src={link.icon} alt="sjd" className='w-7 ' />
-                                        <p className='font-medium  text-[12px] lg:text-lg'>{link.label}</p>
+                                    <div className="flex gap-2   text-center px-5 justify-between">
+                                        <Image src={link.icon} alt="sjd" className='w-8 ' />
+                                        <p className='font-medium  text-[12px] xl:text-sm'>{link.label}</p>
                                     </div>
                                 </Card>
                             )}

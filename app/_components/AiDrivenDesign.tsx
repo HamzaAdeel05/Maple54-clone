@@ -38,13 +38,13 @@ const AiDrivenDesign = () => {
     ]
     return (
         <div className='py-10'>
-            <div className="grid overflow-auto px-5 lg:grid-cols-5 gap-4">
+            <div className="grid  px-5 xl:grid-cols-5 gap-4">
                 {Cards.map((card) => (
-                    <div className="">
-                        <Card key={card.id} className='py-0 bg-[#FAFAFA]  '>
-                            <div className="bg-[#3F5C7C] z-[-1] mt-[-5] rounded-2xl">
-                                .
+                    <div key={card.id} className="">
+                            <div className="bg-[#3F5C7C] z-[-1] mb-[-20] rounded-2xl h-1 py-3">
+                                
                             </div>
+                        <Card  className='py-0 bg-[#FAFAFA] h-full '>
                             <div className="p-4 space-y-10 h-full">
                                 <h2 className='text-[#FA5131] '>{card.icon}</h2>
                                 <h2 className='text-[#431616] font-bold text-xl'>{card.title}</h2>

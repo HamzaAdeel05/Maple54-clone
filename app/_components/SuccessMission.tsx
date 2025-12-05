@@ -6,7 +6,7 @@ const SuccessMission = () => {
   return (
     <div className='bg-[#F6F0E6] py-10 '>
        <SuccessHead />
-       <div className=" lg:px-20">
+       <div className=" xl:px-20">
        <SuccessContent />
        </div>
     </div>

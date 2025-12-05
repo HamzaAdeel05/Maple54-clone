@@ -40,7 +40,7 @@ const MainHomePage = () => {
         <AiAdoption />
         <AiDrivenDesign />
         <GrowBuisness />
-        <Help />
+        {/* <Help /> */}
         <Listening />
         <FAQs />
         <GithubLogo />

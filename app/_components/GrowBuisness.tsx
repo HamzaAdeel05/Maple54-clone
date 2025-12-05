@@ -46,10 +46,10 @@ const GrowBuisness = () => {
     const [selected, setSelected] = useState<any>(Array[0])
 
     return (
-        <div className='lg:px-10 px-5 py-10 lg:py-15 bg-gray-100'>
+        <div className='xl:px-10 px-5 py-10 xl:py-15 bg-gray-100'>
             <div className="space-y-6 mt-10">
-                <h1 className='text-xl lg:text-4xl font-bold'>Grow Your Business with <span className='text-[#FA5131]'> AI-Powered Voice Calling </span></h1>
-                <h2 className='lg:text-2xl '>Maple Voice answers calls, takes orders, books appointments,
+                <h1 className='text-xl xl:text-4xl font-bold'>Grow Your Business with <span className='text-[#FA5131]'> AI-Powered Voice Calling </span></h1>
+                <h2 className='xl:text-2xl '>Maple Voice answers calls, takes orders, books appointments,
                     upsells,
                     and handles high-ticket
                     deals—so you
@@ -57,19 +57,19 @@ const GrowBuisness = () => {
                     it yourself. Streamline your business with AI.</h2>
             </div>
             <div className="max-w-6xl mx-auto py-10">
-                <div className="lg:flex grid grid-cols-2 space-y-4 justify-between">
+                <div className="xl:flex grid grid-cols-2 space-y-4 justify-between">
                     {Array.map((item) => (
                         <div onClick={() => setSelected(item)} key={item.category} className="cursor-pointer">
-                            <h2 className='text-gray-500 lg:text-2xl'>{item.category}</h2>
+                            <h2 className='text-gray-500 xl:text-2xl'>{item.category}</h2>
                         </div>
                     ))}
                 </div>
                 <Separator className='my-5' />
                 {selected && (
-                    <div className="lg:grid grid-cols-3 ">
+                    <div className="xl:grid grid-cols-3 ">
 
                         <div className="space-y-4 col-span-2 gap-4 max-w-lg">
-                            <h2 className='font-medium text-sm lg:text-[18px] text-[#3F5C7C]'>{selected.description}</h2>
+                            <h2 className='font-medium text-sm xl:text-[18px] text-[#3F5C7C]'>{selected.description}</h2>
                             <div className="space-y-4">
                                 {selected?.points?.map((p: string,index:number) => (
                                     <div key={index} className="flex gap-3 items-center ">
@@ -85,7 +85,7 @@ const GrowBuisness = () => {
 
                             <img src="https://www.maple54.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHello.3b8c4228.jpg&w=640&q=75" className='rounded-2xl mt-10 shadow' />
                         </div>
-                        <div className="">
+                        <div className="md:w-100 ">
                             <img src="https://www.maple54.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fphonedemo.d63fa280.png&w=640&q=75" alt="" className='w-full' />
                         </div>
                     </div>

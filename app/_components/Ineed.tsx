@@ -28,16 +28,16 @@ const Ineed = () => {
 
     return (
         <div>
-            <div className="lg:flex grid grid-cols-2 text-center pb-10 gap-4 justify-center items-center px-5 my-15">
+            <div className="xl:flex grid md:grid-cols-3 grid-cols-2 text-center pb-10 gap-4 justify-center items-center px-5 my-15">
                 {serviceItems.map((item) => {
                     const IconComponent = iconMap[item.iconName];
                     return (
-                        <Card key={item.id} className='h-full w-full px-4 items-center shadow-xl hover:cursor-pointer'>
-                            <div className="bg-gray-200 rounded-full p-2">
+                        <Card  key={item.id} className='h-full w-full px-4  items-center shadow-xl hover:cursor-pointer transition-all duration-300 transform hover:scale-105 hover:shadow-2xl '>
+                            <div className="bg-gray-200 rounded-full p-2  hover:text-[#FA5131]">
                             <IconComponent className='w-8 h-8 text-[#FA5131] ' />
                             </div>
                             <p className='text-gray-700 text-sm'>I need</p>
-                            <h2 className='items-center font-bold text-[#431616] text-lg'>{item.category}</h2>
+                            <h2 className='items-center font-bold  text-[#431616] text-lg '>{item.category}</h2>
                             <Icons.MoveRight className='text-[#431616]' />
                         </Card>
                     );

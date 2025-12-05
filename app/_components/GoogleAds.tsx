@@ -157,67 +157,73 @@ const GoogleAds = () => {
 
     return (
         <div className='bg-[#C2D3E6] '>
-            <div className="lg:flex hidden justify-end">
+            <div className="md:flex hidden justify-end">
                 <Button variant={'ghost'} className='bg-[#3F5C7C] hover:text-[#3F5C7C] text-white px-6 rounded-b-sm text-[16px]'>Google Ads starting from $750</Button>
             </div>
-            <div className="lg:py-20 py-10  lg:flex gap-10 px-3 lg:px-10 justify-center items-center">
-                <div className="grid grid-cols-2 gap-4">
-                    {Links.map((link: any) => (
+            <div className="xl:py-20 py-10  md:flex gap-10 lg:px-5 px-3 lg:grid grid-cols-5">
+                <div className="col-span-2">
 
-                        <Card key={link.name} onClick={() => setSelected(link)} className={cn("py-2 ", selected.name === link.name ? "bg-[#3F5C7C] text-white" : "")}>
-                            <div className="flex gap-4 items-center px-4">
-                                <div className="w-5 h-5">
-                                    <img src={link.image_link} />
+                    <div className="grid grid-cols-2 gap-4">
+                        {Links.map((link: any) => (
+
+                            <Card key={link.name} onClick={() => setSelected(link)} className={cn("py-2  ", selected.name === link.name ? "bg-[#3F5C7C] text-white" : "")}>
+                                <div className="flex  gap-2 items-center md:py-1 px-4">
+                                    <div className="w-5 h-5">
+                                        <img src={link.image_link} />
+                                    </div>
+                                    <h2 className={cn('font-semibold md:text-[12px] xl:text-xl text-[#3F5C7C]', selected.name === link.name ? "text-white" : "")}>{link.name}</h2>
                                 </div>
-                                <h2 className={cn('font-semibold  lg:text-xl text-[#3F5C7C]', selected.name === link.name ? "text-white" : "")}>{link.name}</h2>
-                            </div>
-                        </Card>
+                            </Card>
 
-                    ))}
+                        ))}
+                    </div>
                 </div>
-                {selected && (
-                    <div className="lg:min-w-4xl lg:mt-0 mt-8">
-                        <div className="space-y-7 ">
-                            <div className="flex items-center gap-4">
-                                <div className="w-6 h-6">
-                                    <img src={selected.image_link} />
+                <div className="col-span-3">
+
+                    {selected && (
+                        <div className=" xl:mt-0 mt-8">
+                            <div className="space-y-7 ">
+                                <div className="flex items-center gap-4">
+                                    <div className="w-6 h-6">
+                                        <img src={selected.image_link} />
+                                    </div>
+                                    <h2 className='text-[#264464] text-xl md:text-2xl xl:text-4xl font-extrabold'>{selected.name}</h2>
                                 </div>
-                                <h2 className='text-[#264464] text-xl lg:text-4xl font-extrabold'>{selected.name}</h2>
-                            </div>
-                            <h2 className='text-[#264464] lg:text-2xl font-bold'>{selected.question}</h2>
-                            <h3 className='font-semibold lg:text-2xl'>{selected.answer}</h3>
-                            <div className="lg:flex hidden justify-between items-center">
-                                <div className=" space-y-6 py-8 ">
-                                    <div className="flex gap-3 items-center">
-                                        <div className="bg-[#DEE7F1] rounded-full p-4 ">
-                                            <SquareArrowOutUpRight className='text-[#264464]' />
+                                <h2 className='text-[#264464] xl:text-2xl md:text-lg font-bold'>{selected.question}</h2>
+                                <h3 className='font-semibold xl:text-2xl'>{selected.answer}</h3>
+                                <div className="md:flex hidden justify-between items-center">
+                                    <div className=" space-y-6 py-8 ">
+                                        <div className="flex gap-3 items-center">
+                                            <div className="bg-[#DEE7F1] rounded-full p-3 xl:p-4 ">
+                                                <SquareArrowOutUpRight className='text-[#264464]' />
+                                            </div>
+                                            <h2 className='xl:text-xl text-[#264464] font-semibold'>{selected.f}</h2>
                                         </div>
-                                        <h2 className='text-xl text-[#264464] font-semibold'>{selected.f}</h2>
-                                    </div>
-                                    <div className="flex gap-3 items-center">
-                                        <div className="bg-[#DEE7F1] rounded-full p-4 ">
-                                            <CircleDollarSign className='text-[#264464]' />
+                                        <div className="flex gap-3 items-center">
+                                            <div className="bg-[#DEE7F1] rounded-full p-3 xl:p-4 ">
+                                                <CircleDollarSign className='text-[#264464]' />
+                                            </div>
+                                            <h2 className='xl:text-xl text-[#264464] font-semibold'>{selected.s}</h2>
                                         </div>
-                                        <h2 className='text-xl text-[#264464] font-semibold'>{selected.s}</h2>
-                                    </div>
-                                    <div className="flex gap-3 items-center">
-                                        <div className="bg-[#DEE7F1] rounded-full p-4">
-                                            <Boxes className='text-[#264464]' />
+                                        <div className="flex gap-3 items-center">
+                                            <div className="bg-[#DEE7F1] rounded-full p-3 xl:p-4">
+                                                <Boxes className='text-[#264464]' />
+                                            </div>
+                                            <h2 className='xl:text-xl text-[#264464] font-semibold'>{selected.t}</h2>
                                         </div>
-                                        <h2 className='text-xl text-[#264464] font-semibold'>{selected.t}</h2>
                                     </div>
-                                </div>
-                                <div className="">
-                                    <Button className='bg-[#FA5131] lg:flex hidden'>Get started</Button>
+                                    <div className="">
+                                        <Button className='bg-[#FA5131] md:flex hidden'>Get started</Button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                )}
+                    )}
+                </div>
             </div>
             {selected && (
 
-                <div className="hidden lg:grid grid-cols-2 px-10 gap-10 pb-10 ">
+                <div className="hidden md:grid grid-cols-2 px-10 gap-10 pb-10 ">
                     <div className="bg-[#3F5C7C] text-white px-4 py-6 rounded-2xl ">
                         <h2 className='text-xl font-bold mb-3'>The Truth:</h2>
                         <p className='text-lg font-medium'>{selected.truth}</p>

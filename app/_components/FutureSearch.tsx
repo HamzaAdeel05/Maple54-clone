@@ -211,20 +211,20 @@ const FutureSearch = () => {
 
     return (
         <div className='bg-[#F6F0E6] py-10 my-10'>
-            <div className="flex justify-center lg:items-center px-5 flex-col gap-5 lg:py-20 lg:px-25 lg:space-y-4">
-                <h1 className='font-bold text-2xl lg:text-4xl text-[#431616]'>The Future of Search Engine Optimization</h1>
+            <div className="flex justify-center xl:items-center px-5 flex-col gap-5 xl:py-20 xl:px-25 xl:space-y-4">
+                <h1 className='font-bold text-2xl xl:text-4xl text-[#431616]'>The Future of Search Engine Optimization</h1>
                 <h3 className='font-bold text-2xl'><span className='text-[#FA5131]'>Semantic SEO: </span>Is your website
                     speaking the language of search engines?</h3>
                 <h4 className='font-bold text-lg text-center'>Search engines have evolved.</h4>
-                <p className='lg:text-2xl font-semibold'>They no longer just match keywords; they understand the meaning behind your content.Semantic
+                <p className='xl:text-2xl font-semibold'>They no longer just match keywords; they understand the meaning behind your content.Semantic
                     SEO is the key to unlocking a new level of organic visibility by optimizing your website for topics, entities,
                     and user intent. We make your communication effective with search engines. We go beyond traditional keyword targeting to
                     build a web of interconnected
                     information that aligns with user intent and drives meaningful organic growth.</p>
             </div>
-            <div className="mt-5 px-5 lg:px-20">
+            <div className="mt-5 px-5 xl:px-20">
                 <div>
-                    <div className="lg:grid grid-cols-4 gap-10">
+                    <div className="xl:grid grid-cols-4 gap-10">
                         <div className="">
                             {seoServices.map((item: any) => (
                                 <div onClick={() => setSelected(item)} key={item.key} className={cn("px-6 hover:cursor-pointer border-b border-dotted py-4 ",selected.key===item.key ? "bg-[#431616] ":"")}>
@@ -232,7 +232,7 @@ const FutureSearch = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className="col-span-2 mt-7 space-y-4">
+                        <div className="col-span-2 mt-7 xl:block hidden space-y-4">
                             {selected && (
                                 <>
                                     <p className='font-bold text-[#431616] text-lg'>{selected.page_title}</p>
@@ -261,14 +261,14 @@ const FutureSearch = () => {
                                 </>
                             )}
                         </div>
-                        <div className="">
+                        <div className="xl:block hidden">
                             <h1 className='text-[#FA5131] font-bold text-2xl '>How We handle it?</h1>
                             {managed_services_list.map((item) => (
                                 <div key={item} className="px-6 border-b-2 border-dotted py-4">
                                     <h2 className='font-medium text-lg text-gray-700 hover:text-[#FA5131] cursor-pointer'>{item}</h2>
                                 </div>
                             ))}
-                            <div className="lg:flex hidden justify-end mt-15">
+                            <div className="xl:flex hidden justify-end mt-15">
                                 <Button className='bg-[#FA5131] text-white text-[16px] px-6 py-5'>Let's discuss your goals!</Button>
                             </div>
                         </div>

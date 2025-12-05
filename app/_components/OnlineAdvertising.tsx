@@ -37,7 +37,7 @@ const array = [
 
 const OnlineAdvertising = () => {
     return (
-        <div className='border px-10 py-4 hidden lg:flex justify-between font-semibold text-[#873e3e]'>
+        <div className='border px-10 py-4 hidden md:flex justify-between font-semibold text-[#873e3e]'>
 
             {array.map((items) => (
                 <div className="" key={items.id}>
