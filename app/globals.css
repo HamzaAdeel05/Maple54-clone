@@ -39,7 +39,7 @@
   --color-card: var(--card);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
+  --radius-xl: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 }
 
@@ -116,7 +116,19 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@theme {
+  --breakpoint-2xsmall: 320px;
+  --breakpoint-xsmall: 512px;
+  --breakpoint-small: 1024px;
+  --breakpoint-medium: 1280px;
+  --breakpoint-large: 1440px;
+  --breakpoint-xxl: 1500px;
+  --breakpoint-xlarge: 1680px;
+  --breakpoint-2xlarge: 1920px;
 }

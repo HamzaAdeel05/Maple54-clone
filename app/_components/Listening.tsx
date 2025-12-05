@@ -28,11 +28,11 @@ const Listening = () => {
     const [selected, setSelected] = useState<any>(Buttons[0])
 
     return (
-        <div className='lg:py-10 '>
-            <div className="lg:flex px-5 bg-[#F3F3F3] lg:px-30 py-10 lg:py-40 justify-between">
-                <div className="space-y-4 lg:space-y-8 lg:max-w-200">
-                    <h2 className='font-bold text-xl lg:text-4xl'><span className='text-[#FA5131]'>Listening, Understanding,</span> and Crafting Customized Solutions</h2>
-                    <p className=' lg:text-2xl'>Partner with us for tailored solutions crafted to meet your unique needs.
+        <div className='xl:py-10 '>
+            <div className="items-center md:grid md:grid-cols-2 gap-4 px-5 bg-[#F3F3F3] xl:px-30 md:py-20 py-10 xl:py-40 justify-between">
+                <div className="space-y-4 xl:space-y-8 xl:max-w-200">
+                    <h2 className='font-bold text-xl md:text-2xl xl:text-4xl'><span className='text-[#FA5131]'>Listening, Understanding,</span> and Crafting Customized Solutions</h2>
+                    <p className=' xl:text-2xl'>Partner with us for tailored solutions crafted to meet your unique needs.
                         We listen, understand, and design strategies for your success.</p>
                     <div className="space-y-8 px-10">
                         {Buttons.map((button) => (
@@ -46,10 +46,10 @@ const Listening = () => {
 
                                             <Plus size={15} className='text-gray-500' />
                                         )}
-                                        <p className={cn(`text-gray-500 font-medium lg:text-2xl`,selected.heading === button.heading ? "text-[#3482A3]" : "")}>{button.heading}</p>
+                                        <p className={cn(`text-gray-500 font-medium xl:text-2xl`,selected.heading === button.heading ? "text-[#3482A3]" : "")}>{button.heading}</p>
                                     </div>
                                     {selected.heading === button.heading && (
-                                        <p className='font-medium lg:text-2xl mt-5 mx-6 text-gray-500'>{button.description}</p>
+                                        <p className='font-medium xl:text-2xl mt-5 mx-6 text-gray-500'>{button.description}</p>
                                     )}
                                     <Separator className='my-5  ' />
                                 </div>
@@ -57,7 +57,7 @@ const Listening = () => {
                         ))}
                     </div>
                 </div>
-                <div className="lg:grid hidden">
+                <div className="md:grid hidden">
                     <Image src={VideoPic} alt='' />
                 </div>
             </div>

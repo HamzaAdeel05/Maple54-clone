@@ -211,7 +211,7 @@ export default function ServicesGrid() {
     const [selected, setSelected] = useState<any>(services[0])
 
     return (
-        <div className="lg:max-w-360 mx-auto lg:flex hidden py-20">
+        <div className="xl:max-w-360 mx-auto xl:flex hidden py-20">
             <div className="grid grid-cols-3 gap-4 ">
                 {services.map((card: any) => (
                     <div key={card.id || "merged"} className={card.merged ? "row-span-3" : " "}>

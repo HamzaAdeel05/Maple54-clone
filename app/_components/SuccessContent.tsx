@@ -187,7 +187,7 @@ const serviceItems = [
 
             <div className="">
                 <div>
-                    <div className="lg:grid grid-cols-4 gap-10 px-5">
+                    <div className="xl:grid grid-cols-4 gap-10 px-5">
                         <div className="">
                             {serviceItems.map((item: any) => (
                                 <div  onClick={() => setSelected(item)} key={item.id} className={cn("px-6 hover:cursor-pointer border-b border-dotted py-4 ", selected.id === item.id ? "bg-[#431616] " : "")}>
@@ -195,7 +195,7 @@ const serviceItems = [
                                 </div>
                             ))}
                         </div>
-                        <div className="col-span-2 mt-7 space-y-4">
+                        <div className="col-span-2 mt-7 xl:block hidden space-y-4">
                             {selected && (
                                 <>
                                     <p className='font-bold text-[#431616] text-lg'>{selected.category}</p>
@@ -225,7 +225,7 @@ const serviceItems = [
                                 </>
                             )}
                         </div>
-                        <div className="">
+                        <div className="xl:block hidden">
                             <h1 className='text-[#FA5131] font-bold text-2xl '>We Manage</h1>
                             {managed_services_list.map((item) => (
                                 <div key={item} className="px-6 border-b-2 border-dotted py-4">

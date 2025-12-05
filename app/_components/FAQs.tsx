@@ -50,13 +50,13 @@ const FAQs = () => {
 ]
     return (
         <div className='my-10'>
-            <div className="lg:bg-[url('/Images/Divs/BackgroundImage.svg')] bg-cover  bg-center bg-no-repeat ">
-                <div className="grid lg:grid-cols-11">
+            <div className="xl:bg-[url('/Images/Divs/BackgroundImage.svg')] bg-cover  bg-center bg-no-repeat ">
+                <div className="grid xl:grid-cols-11">
                     <div className="col-span-5"></div>
-                    <div className="col-span-6 lg:px-10 py-5">
+                    <div className="col-span-6 xl:px-10 py-5">
                         <div className="bg-white p-4 shadow rounded-2xl">
                             <div className="flex justify-center gap-4 bg-white p-4 shadow rounded-2xl">
-                                <h1 className='lg:text-4xl text-2xl font-bold text-[#3F5C7C] '>Frequently Asked Questions</h1>
+                                <h1 className='xl:text-4xl text-2xl font-bold text-[#3F5C7C] '>Frequently Asked Questions</h1>
                                 <Image src={Vector} alt='' />
                             </div>
                             <div className="space-y-8 mt-5 overflow-auto h-160">
@@ -64,7 +64,7 @@ const FAQs = () => {
                                     <div key={question.id} className="">
                                         <div className="px-4 py-8 shadow rounded-2xl ">
                                             <div onClick={() => setSelected(question)} className="flex  justify-between cursor-pointer items-center w-full">
-                                                <h2 className='lg:text-2xl font-medium'>{question.question}</h2>
+                                                <h2 className='xl:text-2xl font-medium'>{question.question}</h2>
                                                 <div className="border-2 border-black rounded-full p-1">
                                                     {selected?.id === question.id ? (
                                                         <ArrowUp size={15} className='text-gray-500' />
@@ -78,7 +78,7 @@ const FAQs = () => {
                                             {selected?.id === question.id && (
 
                                                 <div className="mt-5">
-                                                    <h2 className='lg:text-2xl text-gray-500'>{question.answer}</h2>
+                                                    <h2 className='xl:text-2xl text-gray-500'>{question.answer}</h2>
                                                 </div>
                                             )}
                                         </div>
