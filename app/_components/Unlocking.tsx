@@ -20,9 +20,9 @@ const Unlocking = () => {
                     backgroundImage: `url(${BannerImage.src})`
                 }}
             >
-                <div className="xl:w-170 h-full px-5 xl:px-10 py-5 xl:py-12 space-y-8 flex flex-col justify-start">
+                <div className="xl:w-170 h-full  px-5 xl:px-10 py-5 xl:py-12 space-y-8 flex flex-col justify-start">
 
-                    <h2 className=" font-bold text-[18px] md:text-[20px] xl:text-[40px]">
+                    <h2 className=" font-bold lg:w-150 md:w-100 w-50 text-[22px] md:text-[20px] xl:text-[40px]">
                         Are you struggling to increase your online visibility?
                     </h2>
 
