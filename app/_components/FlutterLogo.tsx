@@ -29,7 +29,7 @@ const FlutterLogo = () => {
 
     return (
         <div className=" xl:px-40 py-30 md:block hidden">
-            <div className="xl:flex md:flex-wrap  justify-center gap-4 px-5">
+            <div className="flex flex-wrap  justify-center gap-4 px-5">
                 {logos.map((logo:any,index:number) => (
                     <Card key={index} className="flex justify-center items-center  xl:px-4 xl:py-3 shadow-lg  border-none">
                         <div className="xl:w-15 md:w-12 ">
